@@ -5,6 +5,7 @@ function Formulario() {
 
     const [notas, setNotas] = useState('');
     const [notasLista, setnotasLista] = useState([]);
+
     const dato = (e) => {setNotas(e.target.value)}
 
 
@@ -52,10 +53,10 @@ function Formulario() {
                     </button>
                 </li>
                 ))
-            ) : (
-                <p>No hay notas</p>
-            )}
-</ul>
+                ) : (
+                  <p>No hay notas</p>
+                )}
+        </ul>
 
     </>
   )
